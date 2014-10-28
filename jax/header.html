@@ -1,0 +1,113 @@
+<!-- BEGIN header.html -->
+        <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/paper/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src='http://sav-cdn.com/cdn-static/nmt_data/nmt_data.js'></script>
+        <script src='http://sav-cdn.com/cdn-static/nmt_data/mbu/nmt_ads_jax.js'></script>
+
+        <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->    
+        <style type="text/css">
+            .adslot {};
+            img {border:0};
+            img#mpg-logo {max-width: 250px; margin-top: -7px;}
+            .navbar-brand {max-width: 250px; margin-top: -7px;}
+        </style>
+        <script type='text/javascript'>
+            // Google DFP
+            var googletag = googletag || {};
+            googletag.cmd = googletag.cmd || [];
+            (function() {
+                var gads = document.createElement('script');
+                gads.async = true;
+                gads.type = 'text/javascript';
+                var useSSL = 'https:' === document.location.protocol;
+                gads.src = (useSSL ? 'https:' : 'http:') +
+                        '//www.googletagservices.com/tag/js/gpt.js';
+                var node = document.getElementsByTagName('script')[0];
+                node.parentNode.insertBefore(gads, node);
+            })();
+            googletag.cmd.push(function() {
+                var mpg_banner_mapping = googletag.sizeMapping().
+                        addSize([740, 100], [728, 90]).
+                        addSize([0, 0], [[320, 50], [300, 50], [230, 90]]).
+                        build();
+                var mpg_sidebar_mapping = googletag.sizeMapping().
+                        addSize([1024, 768], [[300, 600], [160, 600]]).
+                        addSize([980, 690], [[300, 600], [160, 600]]).
+                        addSize([640, 480], [300, 250]).
+                        addSize([320, 480], [[300, 50], [230, 90]]).
+                        addSize([0, 0], [[320, 50], [300, 50], [230, 90]]).
+                        build();
+                var reSlot1 = googletag.defineSlot(NMTdata.ads.dfp_adunit_prefix+NMTdata.ads.dfp_adunit, [[728, 90]], '728x90_1').defineSizeMapping(mpg_banner_mapping).addService(googletag.pubads()).setTargeting('pos', '728x90_1').setTargeting('ccc', NMTdata.ads.dfp_ccc).setCollapseEmptyDiv(true);
+                var reSlot2 = googletag.defineSlot(NMTdata.ads.dfp_adunit_prefix+NMTdata.ads.dfp_adunit, [[728, 90]], '728x90_2').defineSizeMapping(mpg_banner_mapping).addService(googletag.pubads()).setTargeting('pos', '728x90_2').setTargeting('ccc', NMTdata.ads.dfp_ccc).setCollapseEmptyDiv(true);
+                //var reSlot3 = googletag.defineSlot('/11365842/savannahnow.com/homepage', [[300, 250]], 'mpg_sidebar_banner').defineSizeMapping(mpg_sidebar_mapping).addService(googletag.pubads()).setTargeting('pos', '300x250_1').setTargeting('ccc', NMTdata.ads.dfp_ccc).setCollapseEmptyDiv(true);
+                googletag.pubads().enableSingleRequest();
+                googletag.enableServices();
+
+                var resizeTimeout;
+                function resizeThrottler() {
+                    if (!resizeTimeout) {
+                        resizeTimeout = setTimeout(function() {
+                            resizeTimeout = null;
+                            googletag.pubads().refresh([reSlot1, reSlot2]);
+                        }, 1000);
+                    }
+                }
+                window.addEventListener("resize", resizeThrottler, false);
+
+            });
+        </script>
+        <script type="text/javascript">
+            // Tealium
+            var utag_data = {
+                taxonomy: "MarketplaceBusinessDirectory"};
+            (function(a, b, c, d) {
+                a = '//tags.tiqcdn.com/utag/mpg/jacksonville.com/prod/utag.js';
+                b = document;
+                c = 'script';
+                d = b.createElement(c);
+                d.src = a;
+                d.type = 'text/java' + c;
+                d.async = true;
+                a = b.getElementsByTagName(c)[0];
+                a.parentNode.insertBefore(d, a);
+            })();
+        </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand pull-left" href="http://jacksonville.com/"><img class="img-responsive" id="mpg-logo" src="http://jacksonville.com/sites/default/files/jacksonvillev4_logo.png" alt="Jacksonville.com"/></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a href="http://local.jacksonville.com/">Home</a></li>
+                        <li><a href="http://jacksonville.com/news">News</a></li>
+                        <li><a target="obits" href="http://www.legacy.com/obituaries/timesunion/">Obits</a></li>
+                        <li><a href="http://events.jacksonville.com/">Events</a></li>
+                        <li><a href="http://jacksonville.com/classifieds">Classifieds</a></li>
+                        <li><a href="http://dailydeals.jacksonville.com/">Deals</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div class="divider" style="height: 70px;">&nbsp;</div>
+        <div class="container">
+            <div class="row">
+                <div  id="728x90_1" class="adslot">
+                    <script type='text/javascript'>googletag.cmd.push(function() {
+                            googletag.display('728x90_1');
+                        });</script>
+                </div>
+            </div>
+            <div class="divider">&nbsp;</div>
+        </div><!-- END header.html -->
+
